@@ -1,0 +1,129 @@
+$global_bgc: #2a628f ;
+$navbar_bgc: #00303f ;
+$jumbo_bgc: #010f2d ;
+$second_text: #ffecdb ;
+
+%table_general {
+
+  border: solid 2px $jumbo_bgc;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+body {
+  background-color: $global_bgc;
+}
+
+table, tr, td {
+  @extend %table_general;
+  padding: 15px;
+  th {
+    @extend %table_general;
+    text-align: center;
+  }
+}
+
+.navbar {
+  background-color: $navbar_bgc !important;
+  a{
+    color: $second_text !important;
+  }
+  a:not(.navbar-brand) {
+    opacity: 0.8;
+  }
+  a:hover{
+    opacity: 1;
+  }
+}
+
+.jumbotron {
+  color: $second_text;
+  background-color: $jumbo_bgc;
+  text-align: center;
+  background-image: url(https://i.imgur.com/AIIgiSi.png);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px;
+  height: 400px;
+  margin: 0px;
+}
+
+.btn-dark {
+  background-color: $jumbo_bgc;
+  border-color: $jumbo_bgc;
+  color: $second_text;
+}
+
+.col {
+  p{
+    text-align: left;
+  }
+}
+
+.figure-caption {
+  color: $second_text;
+  opacity: 0.7;
+}
+
+#main-content {
+  margin: 45px;
+  font-weight: lighter;
+  color: $second_text;
+  font-size: 18px;
+  h1{
+    color: $jumbo_bgc;
+  }
+
+}
+
+#main-content_2 {
+  margin-top: 45px;
+  margin-left: 180px;
+  margin-right: 180px;
+  color: $jumbo_bgc;
+  font-size: 18px;
+  color: $second_text;
+}
+
+#navbar_gradient {
+  background-image: linear-gradient($navbar_bgc, $global_bgc);
+  height: 85px;
+}
+
+#jumbo_gradient {
+  background-image: linear-gradient($jumbo_bgc, $global_bgc);
+  height: 85px;
+}
+
+#jumbo_gradient_inverse {
+  background-image: linear-gradient($global_bgc, $jumbo_bgc);
+  height: 85px;
+  background-position: bottom;
+}
+
+
+@media (min-width: 750px) {
+  .jumbotron {
+    h1::before{
+      content: "Welcome to my website.";
+    }
+  }
+}
+
+@media (max-width: 750px) {
+  .jumbotron {
+    h1::before{
+      content: "Welcome.";
+    }
+  }
+}
+
+@media (max-width: 475px) {
+  .jumbotron {
+    h1::before{
+      content: "Welcome.";
+      font-size: 36px;
+    }
+  }
+}

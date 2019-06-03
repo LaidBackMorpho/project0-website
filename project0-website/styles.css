@@ -1,0 +1,111 @@
+table th, tr th, td th, table, tr, td {
+  border: solid 2px #010f2d;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+body {
+  background-color: #2a628f;
+}
+
+table, tr, td {
+  padding: 15px;
+}
+table th, tr th, td th {
+  text-align: center;
+}
+
+.navbar {
+  background-color: #00303f !important;
+}
+.navbar a {
+  color: #ffecdb !important;
+}
+.navbar a:not(.navbar-brand) {
+  opacity: 0.8;
+}
+.navbar a:hover {
+  opacity: 1;
+}
+
+.jumbotron {
+  color: #ffecdb;
+  background-color: #010f2d;
+  text-align: center;
+  background-image: url(https://i.imgur.com/AIIgiSi.png);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px;
+  height: 400px;
+  margin: 0px;
+}
+
+.btn-dark {
+  background-color: #010f2d;
+  border-color: #010f2d;
+  color: #ffecdb;
+}
+
+.col p {
+  text-align: left;
+}
+
+.figure-caption {
+  color: #ffecdb;
+  opacity: 0.7;
+}
+
+#main-content {
+  margin: 45px;
+  font-weight: lighter;
+  color: #ffecdb;
+  font-size: 18px;
+}
+#main-content h1 {
+  color: #010f2d;
+}
+
+#main-content_2 {
+  margin-top: 45px;
+  margin-left: 180px;
+  margin-right: 180px;
+  color: #010f2d;
+  font-size: 18px;
+  color: #ffecdb;
+}
+
+#navbar_gradient {
+  background-image: linear-gradient(#00303f, #2a628f);
+  height: 85px;
+}
+
+#jumbo_gradient {
+  background-image: linear-gradient(#010f2d, #2a628f);
+  height: 85px;
+}
+
+#jumbo_gradient_inverse {
+  background-image: linear-gradient(#2a628f, #010f2d);
+  height: 85px;
+  background-position: bottom;
+}
+
+@media (min-width: 750px) {
+  .jumbotron h1::before {
+    content: "Welcome to my website.";
+  }
+}
+@media (max-width: 750px) {
+  .jumbotron h1::before {
+    content: "Welcome.";
+  }
+}
+@media (max-width: 475px) {
+  .jumbotron h1::before {
+    content: "Welcome.";
+    font-size: 36px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
